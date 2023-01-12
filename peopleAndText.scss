@@ -1,0 +1,78 @@
+.secondContainer {
+    margin-top: 100px;
+    position: relative;
+    height: 700px;
+
+    img {
+        width: 50%;
+        height: 550px;
+        border-radius: 25px;
+        position: absolute;
+        left: 15%;
+        box-shadow: 0px 0px 40px 0px rgb(143, 140, 140);
+    }
+
+    .titleAndText {
+        position: absolute;
+        width: 65%;
+        left: 15%;
+        top: 90%;
+        display: flex;
+
+        .bold {
+            font-size: 85px;
+            flex: 30%;
+        }
+
+        .txt {
+            font-size: 19px;
+            font-weight: bold;
+            color: rgb(75, 74, 74);
+            margin-top: 50px;
+            margin-left: 20px;
+            flex: 70%;
+            line-height: 1.6;
+        }
+    }
+}
+
+.thirdContainer {
+    position: relative;
+    height: 700px;
+    margin-top: 150px;
+    padding-top: 50px;
+    overflow: hidden;
+
+    img {
+        width: 45%;
+        height: 550px;
+        position: absolute;
+        right: -25px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 40px 0px rgb(143, 140, 140);
+    }
+
+    .textWrapper {
+        position: absolute;
+        left: 15%;
+        top: 20%;
+
+        .txt2 {
+            width: 40%;
+            font-size: 19px;
+            margin-bottom: 35px;
+            line-height: 1.6;
+            font-weight: bold;
+            color: rgb(75, 74, 74);
+        }
+
+        .txt3 {
+            width: 40%;
+            font-size: 19px;
+            margin-top: 35px;
+            line-height: 1.6;
+            font-weight: bold;
+            color: rgb(75, 74, 74);
+        }
+    }
+}

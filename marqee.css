@@ -1,0 +1,98 @@
+@-webkit-keyframes myMarquee {
+  0% {
+    transform: translateX(-73%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translate(-73%);
+  }
+}
+@keyframes myMarquee {
+  0% {
+    transform: translateX(-73%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translate(-73%);
+  }
+}
+@-webkit-keyframes myMarquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-73%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes myMarquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-73%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+.marqeeContainer {
+  margin-top: 370px;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-image: radial-gradient(circle at 1% 5%, #317ade, #0e3378 90%);
+}
+.marqeeContainer .marqeeTitle {
+  width: 40%;
+  font-size: 100px;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.marqeeContainer .marqee {
+  padding: 10px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-weight: 600;
+}
+.marqeeContainer .marqee .marqeeInner {
+  display: inline-block;
+  margin-left: 0;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContentReverse {
+  white-space: nowrap;
+  margin-left: 0;
+  transform: translateX(0%);
+  -webkit-animation: myMarquee2 70s linear infinite alternate;
+          animation: myMarquee2 70s linear infinite alternate;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContentReverse .tech {
+  font-size: 32px;
+  margin-right: 40px;
+  color: #fff;
+  opacity: 0.63;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContent {
+  white-space: nowrap;
+  margin-left: 0;
+  transform: translateX(-73%);
+  -webkit-animation: myMarquee 70s linear infinite alternate;
+          animation: myMarquee 70s linear infinite alternate;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContent .tech {
+  font-size: 32px;
+  margin-right: 40px;
+  color: #fff;
+  opacity: 0.63;
+}/*# sourceMappingURL=marqee.css.map */
