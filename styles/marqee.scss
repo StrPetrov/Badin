@@ -1,0 +1,170 @@
+    @keyframes myMarquee {
+    0% {
+        transform: translateX(-73%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translate(-73%);
+    }
+}
+    @keyframes myMarquee2  {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-73%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+    @keyframes fly1 {
+        0% {
+            transform: rotate(0) translateX(200px) rotate(0);
+        }
+        100% {
+            transform: rotate(360deg) translateX(200px) rotate(-360deg);
+        }
+    }
+    @keyframes fly2 {
+        0% {
+            transform: rotate(0) translateX(200px) rotate(0);
+        }
+        100% {
+            transform: rotate(360deg) translateX(200px) rotate(-360deg);
+        }
+    }
+
+.marqeeContainer {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    background-image: radial-gradient(circle at 1% 5%,#317ade,#0e3378 90%);
+
+    .marqeeTitle {
+        width: 40%;
+        font-size: 5.461vw;
+        color: #ffffff;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .marqee {
+        padding: 10px;
+        margin-bottom: 50px;
+        width: 100%;
+        font-weight: 600;
+
+        .marqeeInner {
+            display: inline-block;
+            margin-left: 0;
+
+            .marqeeContentReverse {
+                white-space: nowrap;
+                margin-left: 0;
+                transform: translateX(0%);
+                animation: myMarquee2 70s linear infinite alternate;
+
+                .tech {
+                    font-size: 32px;
+                    margin-right: 40px;
+                    color: #fff;
+                    opacity: .63;
+                }
+            }
+
+            .marqeeContent {
+                white-space: nowrap;
+                margin-left: 0;
+                transform: translateX(-73%);
+                animation: myMarquee 70s linear infinite alternate;
+
+                .tech {
+                    font-size: 32px;
+                    margin-right: 40px;
+                    color: #fff;
+                    opacity: .63;
+                }
+            }
+        }
+    }
+}
+
+.marqeeContainer .aurora {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .auroraWrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .circle {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            filter: blur(130px);
+            opacity: .3;
+        }
+
+        .one {
+            background-color: #a327be;
+            bottom: 100px;
+            left: 200px;
+            animation: fly1 10s linear infinite alternate;
+            transform: rotate(0) translate(200px) rotate(0);
+        }
+
+        .two {
+            background-color: #317ade;
+            top: -200px;
+            left: -200px;
+            animation: fly2 10s linear infinite alternate-reverse;
+            transform: rotate(0) translate(200px) rotate(0);
+        }
+
+        .three {
+            top: -60px;
+            right: 400px;
+            background-color: #f7b500;
+            animation: fly1 10s linear infinite alternate;
+            transform: rotate(0) translate(200px) rotate(0);
+        }
+
+        .four {
+            bottom: 100px;
+            right: 100px;
+            background-color: #6dd400;
+            animation: fly2 10s linear infinite alternate-reverse;
+            transform: rotate(0) translate(200px) rotate(0);
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .marqeeContainer {
+        height: 750px;
+
+        .marqeeTitle {
+            font-size: 50px;
+            margin-left: 50px;
+        }
+
+        .mobile {
+            display: block;
+        }
+    }
+}

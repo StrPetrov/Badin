@@ -67,4 +67,60 @@
   line-height: 1.6;
   font-weight: bold;
   color: rgb(75, 74, 74);
+}
+
+@media only screen and (max-width: 1445px) {
+  .secondContainer {
+    height: auto;
+    margin-top: 0;
+  }
+  .secondContainer img {
+    display: none;
+  }
+  .secondContainer .titleAndText {
+    position: static;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .secondContainer .titleAndText .bold {
+    font-size: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .secondContainer .titleAndText .txt {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+  }
+  .thirdContainer {
+    margin-top: 30px;
+    height: auto;
+  }
+  .thirdContainer img {
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+  }
+  .thirdContainer .textWrapper {
+    position: static;
+  }
+  .thirdContainer .textWrapper .txt2 {
+    width: 90%;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .thirdContainer .textWrapper .txt3 {
+    width: 90%;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=peopleAndText.css.map */

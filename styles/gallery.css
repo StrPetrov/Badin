@@ -1,0 +1,342 @@
+.galleryContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 180px;
+}
+.galleryContainer .row-left {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.galleryContainer .row-left .col-left .photoWrapper1 {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 17%;
+  width: 30.8775731vw;
+  height: 90%;
+  box-shadow: 0px 50px 40px -40px rgb(92, 91, 91);
+}
+.galleryContainer .row-left .col-left .photoWrapper1:hover .photoOverlay {
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.galleryContainer .row-left .col-left .photoWrapper1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.galleryContainer .row-left .col-left .photoWrapper1 .photoOverlay {
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  border-radius: 20px;
+  display: table;
+}
+.galleryContainer .row-left .col-left .photoWrapper1 .photoOverlay .zoom {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.galleryContainer .row-left .col-left .photoWrapper1 .photoOverlay .zoom i {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 900;
+}
+.galleryContainer .row-left .col-left .photoWrapper2 {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 17%;
+  width: 30.8775731vw;
+  height: 90%;
+  box-shadow: 0px 50px 40px -40px rgb(92, 91, 91);
+}
+.galleryContainer .row-left .col-left .photoWrapper2:hover .photoOverlay {
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.galleryContainer .row-left .col-left .photoWrapper2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.galleryContainer .row-left .col-left .photoWrapper2 .photoOverlay {
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  border-radius: 20px;
+  display: table;
+}
+.galleryContainer .row-left .col-left .photoWrapper2 .photoOverlay .zoom {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.galleryContainer .row-left .col-left .photoWrapper2 .photoOverlay .zoom i {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 900;
+}
+.galleryContainer .row-left .col-left .photoWrapper3 {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 10%;
+  width: 33.586132vw;
+  height: 90%;
+  box-shadow: 0px 50px 40px -40px rgb(92, 91, 91);
+}
+.galleryContainer .row-left .col-left .photoWrapper3:hover .photoOverlay {
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.galleryContainer .row-left .col-left .photoWrapper3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.galleryContainer .row-left .col-left .photoWrapper3 .photoOverlay {
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  border-radius: 20px;
+  display: table;
+}
+.galleryContainer .row-left .col-left .photoWrapper3 .photoOverlay .zoom {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.galleryContainer .row-left .col-left .photoWrapper3 .photoOverlay .zoom i {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 900;
+}
+.galleryContainer .row-mid {
+  flex: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.galleryContainer .row-mid .col-mid .photoWrapper4 {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 60px;
+  width: 27.08559vw;
+  height: 90%;
+  box-shadow: 0px 50px 40px -40px rgb(92, 91, 91);
+}
+.galleryContainer .row-mid .col-mid .photoWrapper4:hover .photoOverlay {
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.galleryContainer .row-mid .col-mid .photoWrapper4 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.galleryContainer .row-mid .col-mid .photoWrapper4 .photoOverlay {
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  border-radius: 20px;
+  display: table;
+}
+.galleryContainer .row-mid .col-mid .photoWrapper4 .photoOverlay .zoom {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.galleryContainer .row-mid .col-mid .photoWrapper4 .photoOverlay .zoom i {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 900;
+}
+.galleryContainer .row-right {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.galleryContainer .row-right .col-right .photoWrapper5 {
+  position: relative;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 25px;
+  width: 24.91874vw;
+  height: 90%;
+  box-shadow: 0px 50px 40px -40px rgb(92, 91, 91);
+}
+.galleryContainer .row-right .col-right .photoWrapper5:hover .photoOverlay {
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.galleryContainer .row-right .col-right .photoWrapper5 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.galleryContainer .row-right .col-right .photoWrapper5 .photoOverlay {
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  border-radius: 20px;
+  display: table;
+}
+.galleryContainer .row-right .col-right .photoWrapper5 .photoOverlay .zoom {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.galleryContainer .row-right .col-right .photoWrapper5 .photoOverlay .zoom i {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 900;
+}
+.galleryContainer .row-right .photoWrapper6 {
+  position: relative;
+  margin-top: 70px;
+  margin-right: 50px;
+  margin-left: 25px;
+  width: 24.91874vw;
+  height: 80%;
+  box-shadow: 0px 50px 40px -40px rgb(92, 91, 91);
+}
+.galleryContainer .row-right .photoWrapper6:hover .photoOverlay {
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.galleryContainer .row-right .photoWrapper6 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.galleryContainer .row-right .photoWrapper6 .photoOverlay {
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  border-radius: 20px;
+  display: table;
+}
+.galleryContainer .row-right .photoWrapper6 .photoOverlay .zoom {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.galleryContainer .row-right .photoWrapper6 .photoOverlay .zoom i {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 1100px) {
+  .galleryContainer {
+    flex-direction: column;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper1 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper1 .photoOverlay {
+    display: none;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper1 img {
+    display: block;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper2 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper2 .photoOverlay {
+    display: none;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper2 img {
+    display: block;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper3 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper3 .photoOverlay {
+    display: none;
+  }
+  .galleryContainer .row-left .col-left .photoWrapper3 img {
+    display: block;
+  }
+  .galleryContainer .row-mid .col-mid .photoWrapper4 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  .galleryContainer .row-mid .col-mid .photoWrapper4 .photoOverlay {
+    display: none;
+  }
+  .galleryContainer .row-mid .col-mid .photoWrapper4 img {
+    display: block;
+  }
+  .galleryContainer .row-right .col-right .photoWrapper5 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  .galleryContainer .row-right .col-right .photoWrapper5 .photoOverlay {
+    display: none;
+  }
+  .galleryContainer .row-right .col-right .photoWrapper5 img {
+    display: block;
+  }
+  .galleryContainer .row-right .col-right .photoWrapper6 {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  .galleryContainer .row-right .col-right .photoWrapper6 .photoOverlay {
+    display: none;
+  }
+  .galleryContainer .row-right .col-right .photoWrapper6 img {
+    display: block;
+  }
+}/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,101 @@
+.beforeFooter {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  position: relative;
+}
+.beforeFooter .combined3 {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: auto;
+  position: relative;
+}
+.beforeFooter .combined3 .noSelect {
+  font-size: 120px;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.beforeFooter .combined3 .select {
+  font-size: 90px;
+  letter-spacing: 5px;
+  color: black;
+  width: 70%;
+  position: absolute;
+  top: 70%;
+  line-height: 1;
+}
+.beforeFooter .email {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 250px;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 10%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.beforeFooter .contant-illustration {
+  width: 430px;
+  height: 330px;
+  position: absolute;
+  bottom: 0px;
+  right: 180px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .beforeFooter .combined3 {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 5%;
+  }
+  .beforeFooter .combined3 .noSelect {
+    font-size: 70px;
+  }
+  .beforeFooter .combined3 .select {
+    font-size: 60px;
+    width: 100%;
+  }
+  .beforeFooter .email {
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .beforeFooter .contant-illustration {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    right: 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .beforeFooter .combined3 {
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 5%;
+  }
+  .beforeFooter .combined3 .noSelect {
+    font-size: 70px;
+  }
+  .beforeFooter .combined3 .select {
+    font-size: 60px;
+    width: 100%;
+  }
+  .beforeFooter .email {
+    margin-left: 5%;
+    margin-top: 230px;
+    margin-bottom: 300px;
+  }
+  .beforeFooter .contant-illustration {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+  }
+}/*# sourceMappingURL=beforeFooter.css.map */

@@ -182,3 +182,119 @@
         }
     }
 }
+
+@media only screen and (max-width: 1450px) {
+    .forthContainer {
+        flex-direction: column;
+        height: auto;
+
+            .left {
+                margin-bottom: 50px;
+
+                .combinedHeading {
+                    margin-top: 50px;
+                    margin-left: 50px;
+                    
+                    .notSelectable {
+                        font-size: 50px;
+                    }
+
+                    .selectable {
+                        font-size: 50px;
+                    }
+                }
+
+                .startup {
+                    margin-top: 50px;
+                    margin-left: 50px;
+                    font-size: 15px;
+                    width: 70%;   
+                }
+
+                .startupBtn {
+                    margin-top: 50px;
+                    margin-left: 50px; 
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: row;
+
+                .trusted {
+                    display: none;
+                }
+
+                .clientsVertical {
+                    width: 200px;
+                    height: 100px;
+                }
+            }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .fifthContainer {
+        height: auto;
+
+        .combined {
+            margin-left: 50px;
+
+            .notSelectable {
+                font-size: 80px;
+            }
+
+            .ableToSelect {
+                font-size: 80px;
+            }
+        }
+
+        .applyContainer {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .fifthContainer {
+        height: auto;
+
+        .combined {
+            margin-left: 50px;
+
+            .notSelectable {
+                font-size: 60px;
+            }
+
+            .ableToSelect {
+                font-size: 60px;
+            }
+        }
+
+        .applyContainer {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            height: 180px;
+
+            .pos {
+                position: static;
+                margin-top: 20px;
+                margin-left: 20px;
+                padding: 5px;
+            }
+
+            .applyButton {
+                position: static;
+                margin-top: 20px;
+                margin-left: 20px;
+                padding: 5px;
+            }
+        }
+    }
+}

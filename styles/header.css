@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes fly1 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@keyframes fly1 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes fly2 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@keyframes fly2 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.container .img-anim {
+  background-color: rgb(26, 25, 25);
+  width: 100%;
+  height: 100%;
+}
+.container .img-anim .aurora {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.container .img-anim .aurora .auroraWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container .img-anim .aurora .auroraWrapper .circle {
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  filter: blur(130px);
+  opacity: 0.3;
+}
+.container .img-anim .aurora .auroraWrapper .one {
+  background-color: #a327be;
+  bottom: 100px;
+  left: 200px;
+  -webkit-animation: fly1 8s linear infinite alternate;
+          animation: fly1 8s linear infinite alternate;
+  transform: rotate(0) translate(200px) rotate(0);
+  z-index: 1;
+}
+.container .img-anim .aurora .auroraWrapper .two {
+  background-color: #317ade;
+  top: -200px;
+  left: -200px;
+  animation: fly2 8s linear infinite alternate-reverse;
+  transform: rotate(0) translate(200px) rotate(0);
+  z-index: 1;
+}
+.container .img-anim .aurora .auroraWrapper .three {
+  top: -60px;
+  right: 400px;
+  background-color: #f7b500;
+  -webkit-animation: fly1 8s linear infinite alternate;
+          animation: fly1 8s linear infinite alternate;
+  transform: rotate(0) translate(200px) rotate(0);
+  z-index: 1;
+}
+.container .img-anim .aurora .auroraWrapper .four {
+  bottom: 300px;
+  right: 300px;
+  background-color: #6dd400;
+  animation: fly2 8s linear infinite alternate-reverse;
+  transform: rotate(0) translate(200px) rotate(0);
+  z-index: 1;
+}
+.container .net {
+  background-image: url("../headerPhotos/net.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 0;
+  left: 50%;
+  bottom: 50px;
+}
+.container .white-bg {
+  background-image: url("../headerPhotos/white-part-big.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  top: -188px;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+}
+.container .white-part-small {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 60%;
+}
+.container .planet {
+  position: absolute;
+  z-index: 3;
+  left: 73%;
+  top: 100px;
+}
+.container .hero {
+  background-image: url("../headerPhotos/hero-big-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+  top: 210px;
+  left: 55%;
+  bottom: 0;
+  right: -150px;
+}
+.container .tower-left {
+  background-image: url("../headerPhotos/tower.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 3;
+  top: 76%;
+  bottom: -20px;
+  right: 0;
+  left: 50%;
+}
+.container .tower-right {
+  background-image: url("../headerPhotos/tower.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 3;
+  top: 77%;
+  bottom: 1%;
+  right: 0;
+  left: 92%;
+}
+.container .logo {
+  background-image: url("../headerPhotos/logo-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  min-width: 130px;
+  min-height: 35px;
+  z-index: 3;
+  top: 100px;
+  left: 17%;
+  right: 77%;
+  bottom: 85%;
+}
+.container .title {
+  width: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 200px;
+  left: 17%;
+  color: white;
+  font-size: 50px;
+}
+.container .text {
+  width: 30%;
+  position: absolute;
+  z-index: 3;
+  top: 480px;
+  left: 17%;
+  color: grey;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.container .buttons {
+  width: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 600px;
+  left: 17%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+.container .buttons .btn-left {
+  background-color: white;
+  border-radius: 999px;
+  color: rgb(30, 29, 29);
+  width: 200px;
+  height: 55px;
+  display: table;
+  margin-right: 13px;
+}
+.container .buttons .btn-left:hover {
+  background-color: rgb(214, 208, 208);
+  transition: 0.7s;
+  cursor: pointer;
+}
+.container .buttons .btn-left .centred {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.container .buttons .btn-right {
+  background-color: rgb(70, 68, 68);
+  border-radius: 999px;
+  color: white;
+  width: 200px;
+  height: 55px;
+  display: table;
+  margin-left: 13px;
+}
+.container .buttons .btn-right:hover {
+  background-color: rgb(60, 59, 59);
+  transition: 0.7s;
+  cursor: pointer;
+}
+.container .buttons .btn-right .centred {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.container .menuButton {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  z-index: 8;
+  width: 32px;
+  cursor: pointer;
+}
+.container .menuButton:hover .rotate {
+  transform: rotate(-90deg) translateX(-5px) translateY(40px);
+  transition: 1s;
+  letter-spacing: 6px;
+}
+.container .menuButton:hover .menuButtonLineMiddle {
+  width: 40px;
+  transition: 1s;
+}
+.container .menuButton:hover .menuButtonLineBottom {
+  width: 30px;
+  transition: 1s;
+}
+.container .menuButton .menuButtonLine {
+  margin-bottom: 5px;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  float: right;
+}
+.container .menuButton .rotate {
+  transform: rotate(-90deg) translateX(0px) translateY(30px);
+  letter-spacing: 3px;
+  color: white;
+  font-size: 14px;
+}
+.container a .backTop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  height: 56px;
+  width: 56px;
+  z-index: 7;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container a .backTop .backTopBar {
+  height: 40px;
+  width: 40px;
+  z-index: 7;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+.container a .backTop .backTopBar .backTopIcon {
+  height: calc(98% - 4px);
+  width: calc(100% - 4px);
+  background-color: #000;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1450px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container .planet {
+    left: 85%;
+    top: 70px;
+  }
+  .container .hero {
+    top: 190px;
+    left: 55%;
+  }
+  .container .net {
+    top: 150px;
+    left: 30px;
+  }
+  .container .tower-left {
+    top: 78%;
+    left: 35%;
+  }
+  .container .tower-right {
+    left: 89%;
+  }
+  .container .logo {
+    top: 20px;
+    left: 10%;
+  }
+  .container .title {
+    left: 10%;
+  }
+  .container .text {
+    left: 10%;
+  }
+  .container .buttons {
+    left: 10%;
+  }
+  .container .menuButton {
+    display: none;
+  }
+  .container .white-part-small {
+    display: none;
+  }
+  .container .menuIconMedia {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 90%;
+    top: 40px;
+  }
+  .container .menuIconMedia .menuIconMediaLine {
+    width: 22px;
+    height: 2px;
+    margin: 3px;
+    z-index: 3;
+    background-color: white;
+  }
+  .container .menuIconMedia .menuIconMediaLineBold {
+    height: 3px;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    overflow: hidden;
+  }
+  .container .planet {
+    left: 180px;
+    top: 600px;
+  }
+  .container .hero {
+    top: 350px;
+    left: 40%;
+    width: 700px;
+    height: 600px;
+  }
+  .container .net {
+    top: 150px;
+    left: 30px;
+  }
+  .container .tower-left {
+    top: 85%;
+    left: 25%;
+  }
+  .container .tower-right {
+    left: 89%;
+  }
+  .container .logo {
+    top: 30px;
+    left: 30px;
+    min-width: 100px;
+    min-height: 30px;
+  }
+  .container .title {
+    left: 30px;
+    width: 100%;
+    font-size: 30px;
+  }
+  .container .text {
+    left: 30px;
+    width: 80%;
+    top: 300px;
+  }
+  .container .buttons {
+    left: 30px;
+    top: 400px;
+  }
+  .container .menuButton {
+    display: none;
+  }
+  .container .white-part-small {
+    display: none;
+  }
+  .container .menuIconMedia {
+    right: 30px;
+    top: 30px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container .planet {
+    left: 100px;
+    top: 650px;
+  }
+  .container .hero {
+    top: 550px;
+    left: 40%;
+    width: 500px;
+    height: 400px;
+  }
+  .container .tower-left {
+    top: 90%;
+    left: 30px;
+  }
+  .container .tower-right {
+    left: 89%;
+    top: 90%;
+  }
+  .container .logo {
+    top: 30px;
+    left: 30px;
+    min-width: 100px;
+    min-height: 30px;
+  }
+  .container .title {
+    left: 30px;
+    width: 100%;
+    font-size: 30px;
+  }
+  .container .text {
+    left: 30px;
+    width: 90%;
+    top: 300px;
+  }
+  .container .buttons {
+    left: 30px;
+    top: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .buttons .btn-left {
+    width: 90%;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .container .buttons .btn-right {
+    width: 90%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .container .menuButton {
+    display: none;
+  }
+  .container .white-part-small {
+    display: none;
+  }
+  .container .menuIconMedia {
+    right: 30px;
+    top: 30px;
+  }
+}
+@media only screen and (max-width: 605px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .planet {
+    left: 20px;
+    top: 700px;
+  }
+  .container .hero {
+    top: 650px;
+    left: 30%;
+    width: 400px;
+    height: 300px;
+  }
+  .container .tower-left {
+    top: 90%;
+    left: 30px;
+  }
+  .container .tower-right {
+    left: 89%;
+    top: 90%;
+  }
+  .container .logo {
+    top: 30px;
+    left: 30px;
+    min-width: 100px;
+    min-height: 30px;
+  }
+  .container .title {
+    top: 100px;
+  }
+  .container .text {
+    top: 350px;
+  }
+  .container .buttons {
+    left: 30px;
+    top: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .buttons .btn-left {
+    width: 90%;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .container .buttons .btn-right {
+    width: 90%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .container .menuButton {
+    display: none;
+  }
+  .container .white-part-small {
+    display: none;
+  }
+  .container .menuIconMedia {
+    right: 30px;
+    top: 30px;
+  }
+}/*# sourceMappingURL=header.css.map */

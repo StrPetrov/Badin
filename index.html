@@ -5,28 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badin soft</title>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="headerPhotos/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="clients.css">
-    <link rel="stylesheet" href="peopleAndText.css">
-    <link rel="stylesheet" href="servicesAndFeedback.css">
-    <link rel="stylesheet" href="letsStart.css">
-    <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="marqee.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/clients.css">
+    <link rel="stylesheet" href="styles/peopleAndText.css">
+    <link rel="stylesheet" href="styles/servicesAndFeedback.css">
+    <link rel="stylesheet" href="styles/letsStart.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/marqee.css">
+    <link rel="stylesheet" href="styles/beforeFooter.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <div class="container">
-        <div class="img-anim"></div>
+    <div class="container" id="top">
+        <div class="img-anim">
+            <div class="aurora">
+                <div class="auroraWrapper">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+                <div class="circle three"></div>
+                <div class="circle four"></div>
+                </div>
+            </div>
+        </div>
         <div class="net"></div>
         <div class="white-bg"></div>
         <div class="white-part-small"><img src="headerPhotos/white-part-small.svg" alt="img"></div>
         <div class="planet"><img src="headerPhotos/planet.png" alt="img"></div>
+        <div class="menuIconMedia">
+            <div class="menuIconMediaLine menuIconMediaLineBold "></div>
+            <div class="menuIconMediaLine"></div>
+            <div class="menuIconMediaLine"></div>
+        </div>
         <div class="hero"></div>
         <div class="tower-left"></div>
         <div class="tower-right"></div>
-        <div class="logo"></div>
+        <a href="#"><div class="logo"></div></a>
         <div class="title"><h1>It' s all about PEOPLE</h1></div>
         <div class="text">
             <p>Whether you are an employee, a member of the community, a client, or a
@@ -37,6 +53,21 @@
             <div class="btn-left"><span class="centred">What we do</span></div>
             <div class="btn-right"><span class="centred">Life at Badin</span></div>
         </div>
+        <div class="menuButton">
+            <div class="menuButtonLine"></div>
+            <div class="menuButtonLine menuButtonLineMiddle"></div>
+            <div class="menuButtonLine menuButtonLineBottom"></div>
+            <div class="rotate">MENU</div>
+        </div>
+        <a href="#top">
+            <div class="backTop">
+                <div class="backTopBar">
+                    <span class="backTopIcon">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+        </a>
     </div>
     <div class="clients">
         <img src="clientsPhotos/united-cloud.png" alt="img">
@@ -66,7 +97,6 @@
         </div>
     </div>
     <div class="thirdContainer">
-        <img src="peoplePhotos/how-we-got-img.png" alt="img">
         <div class="textWrapper">
             <p class="txt2">At the heart of Badin lies a community of people who are continuously
                 improving themselves and those around them by promoting education, knowledge 
@@ -78,14 +108,15 @@
                 work with, and in the belief that the same goal connects us all.
             </p>
          </div>
+         <img src="peoplePhotos/how-we-got-img.png" alt="img">
     </div>
     <div class="servicesContainerFirst">
         <h1 class="servicesTitle">What we offer</h1>
-        <div class="btn"><span class="cnt">Read more about services</span></div>
         <p class="tx">Whether you need a research and development hub for crafting innovative
             products, a stable long-term partner to strengthen your teams, or a consultant 
             to help navigate you through your digital transformation, we have you covered.
         </p>
+        <div class="btn"><span class="cnt">Read more about services</span></div>
     </div>
     <div class="servicesContainerSecond">
         <div class="serviceContainer">
@@ -112,18 +143,16 @@
                 </div>
                 <img class="bottomImgSecond" src="servicesPhotos/big-img-mid.png" alt="img">
             </div>
-            <div class="service">
-                <div class="serviceWrapperGreen">
-                    <p class="greenSubTitle">Sharing knowledge and experience.</p>
-                    <h1 class="greenHeading">Technology, transformation and innovation consulting</h1>
-                    <div class="servicePhotosContainerGreen">
-                        <img src="servicesPhotos/green-icon-one.png" alt="img">
-                        <img src="servicesPhotos/green-icon-two.png" alt="img">
-                        <img src="servicesPhotos/green-icon-three.png" alt="img">
-                        <img src="servicesPhotos/green-icon-four.png" alt="img">
-                    </div>
-                    <img class="bottomImgThird" src="servicesPhotos/big-img-dwn.png" alt="img">
+            <div class="service serviceWrapperGreen">
+                <p class="greenSubTitle">Sharing knowledge and experience.</p>
+                <h1 class="greenHeading">Technology, transformation and innovation consulting</h1>
+                <div class="servicePhotosContainerGreen">
+                    <img src="servicesPhotos/green-icon-one.png" alt="img">
+                    <img src="servicesPhotos/green-icon-two.png" alt="img">
+                    <img src="servicesPhotos/green-icon-three.png" alt="img">
+                    <img src="servicesPhotos/green-icon-four.png" alt="img">
                 </div>
+                <img class="bottomImgThird" src="servicesPhotos/big-img-dwn.png" alt="img">
             </div>
         </div>
     </div>
@@ -198,44 +227,68 @@
         <div class="allOpenPos"><span class="cn">See all open positions</span></div>
     </div>
     <div class="galleryContainer">
-        <div class="photoWrapper1">
-            <img src="galleryPhotos/img1.jpg" alt="img">
-            <div class="photoOverlay">
-                <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        <div class="row-left">
+            <div class="col-left">
+                <div class="photoWrapper1">
+                    <img src="galleryPhotos/img1.jpg" alt="img">
+                    <div class="photoOverlay">
+                        <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-left">
+                <div class="photoWrapper2">
+                    <img src="galleryPhotos/img2.jpg" alt="img">
+                    <div class="photoOverlay">
+                        <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-left">
+                <div class="photoWrapper3">
+                    <img src="galleryPhotos/img3.jpg" alt="img">
+                    <div class="photoOverlay">
+                        <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="photoWrapper2">
-            <img src="galleryPhotos/img2.jpg" alt="img">
-            <div class="photoOverlay">
-                <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        <div class="row-mid">
+            <div class="col-mid">
+                <div class="photoWrapper4">
+                    <img src="galleryPhotos/img4.jpg" alt="img">
+                    <div class="photoOverlay">
+                        <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="photoWrapper3">
-            <img src="galleryPhotos/img3.jpg" alt="img">
-            <div class="photoOverlay">
-                <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        <div class="row-right">
+            <div class="col-right">
+                <div class="photoWrapper5">
+                    <img src="galleryPhotos/img5.jpg" alt="img">
+                    <div class="photoOverlay">
+                        <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="photoWrapper4">
-            <img src="galleryPhotos/img4.jpg" alt="img">
-            <div class="photoOverlay">
-                <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-            </div>
-        </div>
-        <div class="photoWrapper5">
-            <img src="galleryPhotos/img5.jpg" alt="img">
-            <div class="photoOverlay">
-                <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-            </div>
-        </div>
-        <div class="photoWrapper6">
-            <img src="galleryPhotos/img6.jpg" alt="img">
-            <div class="photoOverlay">
-                <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="col-right">
+                <div class="photoWrapper6">
+                    <img src="galleryPhotos/img6.jpg" alt="img">
+                    <div class="photoOverlay">
+                        <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="marqeeContainer">
+        <div class="aurora">
+        <div class="auroraWrapper">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
         <h1 class="marqeeTitle">Our expertise</h1>
         <div class="marqee">
             <div class="marqeeInner">
@@ -333,6 +386,154 @@
                 </div>
             </div>
         </div>
+        <div class="marqee mobile">
+            <div class="marqeeInner">
+                <div class="marqeeContent">
+                    <span class="tech">Machine Learning</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">HTML</span>
+                    <span class="tech">Playwright</span>
+                    <span class="tech">Cypress</span>
+                    <span class="tech">Selenium</span>
+                    <span class="tech">Tomcat</span>
+                    <span class="tech">Phalcon</span>
+                    <span class="tech">PL/SQL</span>
+                    <span class="tech">Oracle Forms</span>
+                    <span class="tech">SQL</span>
+                    <span class="tech">Kubernetes</span>
+                    <span class="tech">Hibernate</span>
+                    <span class="tech">Flutter</span>
+                    <span class="tech">Go</span>
+                    <span class="tech">Figma</span>
+                    <span class="tech">Docker</span>
+                    <span class="tech">Jenkins</span>
+                    <span class="tech">Amazon Web Services</span>
+                    <span class="tech">MongoDB</span>
+                    <span class="tech">Swift</span>
+                    <span class="tech">Vue.js</span>
+                    <span class="tech">.NET core</span>
+                    <span class="tech">Hybris</span>
+                    <span class="tech">TypeScript</span>
+                    <span class="tech">ReactNative</span>
+                    <span class="tech">Spring Boot</span>
+                    <span class="tech">Spring</span>
+                    <span class="tech">WordPress</span>
+                    <span class="tech">MySQL</span>
+                    <span class="tech">iOS</span>
+                    <span class="tech">Java</span>
+                    <span class="tech">Angular</span>
+                    <span class="tech">ReactJS</span>
+                    <span class="tech">NodeJS</span>
+                    <span class="tech">.NET</span>
+                    <span class="tech">Laravel</span>
+                    <span class="tech">Symfony</span>
+                    <span class="tech">PHP</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">C#</span>
+                    <span class="tech">Android</span>
+                </div>
+            </div>
+        </div>
+        <div class="marqee mobile">
+            <div class="marqeeInner">
+                <div class="marqeeContentReverse">
+                    <span class="tech">Machine Learning</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">HTML</span>
+                    <span class="tech">Playwright</span>
+                    <span class="tech">Cypress</span>
+                    <span class="tech">Selenium</span>
+                    <span class="tech">Tomcat</span>
+                    <span class="tech">Phalcon</span>
+                    <span class="tech">PL/SQL</span>
+                    <span class="tech">Oracle Forms</span>
+                    <span class="tech">SQL</span>
+                    <span class="tech">Kubernetes</span>
+                    <span class="tech">Hibernate</span>
+                    <span class="tech">Flutter</span>
+                    <span class="tech">Go</span>
+                    <span class="tech">Figma</span>
+                    <span class="tech">Docker</span>
+                    <span class="tech">Jenkins</span>
+                    <span class="tech">Amazon Web Services</span>
+                    <span class="tech">MongoDB</span>
+                    <span class="tech">Swift</span>
+                    <span class="tech">Vue.js</span>
+                    <span class="tech">.NET core</span>
+                    <span class="tech">Hybris</span>
+                    <span class="tech">TypeScript</span>
+                    <span class="tech">ReactNative</span>
+                    <span class="tech">Spring Boot</span>
+                    <span class="tech">Spring</span>
+                    <span class="tech">WordPress</span>
+                    <span class="tech">MySQL</span>
+                    <span class="tech">iOS</span>
+                    <span class="tech">Java</span>
+                    <span class="tech">Angular</span>
+                    <span class="tech">ReactJS</span>
+                    <span class="tech">NodeJS</span>
+                    <span class="tech">.NET</span>
+                    <span class="tech">Laravel</span>
+                    <span class="tech">Symfony</span>
+                    <span class="tech">PHP</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">C#</span>
+                    <span class="tech">Android</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
     </div>
+    <div class="beforeFooter">
+        <div class="combined3">
+            <h1 class="noSelect">Are you ready?</h1>
+            <h1 class="select">Let's do great things together</h1>
+        </div>
+        <p class="email">info@badin.rs</p>
+        <img class="contant-illustration" src="beforeFooterPhoto/contact-illustration.png" alt="img">
+    </div>
+    <div class="footer">
+        <div class="footerContainer">
+            <div class="footerContainerLeft">
+                <a href="#"><img class="footerPhoto" src="headerPhotos/logo-white.svg" alt="img"></a>
+                <p class="footerText">...and that's just the beginning!</p>
+                <div class="socialMedia">
+                    <a href="#" class="socialIcon"><i class="fa-brands fa-linkedin-in fa-2x social"></i></a>
+                    <a href="#" class="socialIcon"><i class="fa-brands fa-youtube fa-2x social"></i></a>
+                    <a href="#" class="socialIcon"><i class="fa-brands fa-spotify fa-2x social"></i></a>
+                    <a href="#" class="socialIcon"><i class="fa-brands fa-instagram fa-2x social"></i></a>
+                    <a href="#" class="socialIcon"><i class="fa-brands fa-facebook-f fa-2x social"></i></a>
+                </div>
+            </div>
+            <div class="footerContainerRight">
+                <div class="leftCol">
+                    <h3 class="nav">Navigation</h3>
+                    <ul class="navList">
+                        <li class="listItem"><a href="#">Home</a></li>
+                        <li class="listItem"><a href="#">About Us</a></li>
+                        <li class="listItem"><a href="#">Services</a></li>
+                        <li class="listItem"><a href="#">Products</a></li>
+                        <li class="listItem"><a href="#">Careers</a></li>
+                        <li class="listItem"><a href="#">Blog</a></li>
+                        <li class="listItem"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="rightCol">
+                    <h3 class="cont">Contact</h3>
+                    <ul class="contList">
+                        <li class="contListItem"><a href="mailto:info@badin.rs">info@badin.rs</a></li>
+                        <li class="contListItem">Nikole Pašića 28, IV floor</li>
+                        <li class="contListItem">18000 Niš</li>
+                        <li class="contListItem">Serbia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerLine"></div>
+        <div class="footerEnding">&copy;2023 - Badin Soft DOO. All right reserved.</div>
+    </div>
+    <script src="timeline.js"></script>
+    <script src="trusted.js"></script>
 </body>
 </html>

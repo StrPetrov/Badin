@@ -1,0 +1,195 @@
+@-webkit-keyframes myMarquee {
+  0% {
+    transform: translateX(-73%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translate(-73%);
+  }
+}
+@keyframes myMarquee {
+  0% {
+    transform: translateX(-73%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translate(-73%);
+  }
+}
+@-webkit-keyframes myMarquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-73%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes myMarquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-73%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@-webkit-keyframes fly1 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@keyframes fly1 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes fly2 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@keyframes fly2 {
+  0% {
+    transform: rotate(0) translateX(200px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+.marqeeContainer {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-image: radial-gradient(circle at 1% 5%, #317ade, #0e3378 90%);
+}
+.marqeeContainer .marqeeTitle {
+  width: 40%;
+  font-size: 5.461vw;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.marqeeContainer .mobile {
+  display: none;
+}
+.marqeeContainer .marqee {
+  padding: 10px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-weight: 600;
+}
+.marqeeContainer .marqee .marqeeInner {
+  display: inline-block;
+  margin-left: 0;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContentReverse {
+  white-space: nowrap;
+  margin-left: 0;
+  transform: translateX(0%);
+  -webkit-animation: myMarquee2 70s linear infinite alternate;
+          animation: myMarquee2 70s linear infinite alternate;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContentReverse .tech {
+  font-size: 32px;
+  margin-right: 40px;
+  color: #fff;
+  opacity: 0.63;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContent {
+  white-space: nowrap;
+  margin-left: 0;
+  transform: translateX(-73%);
+  -webkit-animation: myMarquee 70s linear infinite alternate;
+          animation: myMarquee 70s linear infinite alternate;
+}
+.marqeeContainer .marqee .marqeeInner .marqeeContent .tech {
+  font-size: 32px;
+  margin-right: 40px;
+  color: #fff;
+  opacity: 0.63;
+}
+
+.marqeeContainer .aurora {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.marqeeContainer .aurora .auroraWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.marqeeContainer .aurora .auroraWrapper .circle {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  filter: blur(130px);
+  opacity: 0.3;
+}
+.marqeeContainer .aurora .auroraWrapper .one {
+  background-color: #a327be;
+  bottom: 100px;
+  left: 200px;
+  -webkit-animation: fly1 10s linear infinite alternate;
+          animation: fly1 10s linear infinite alternate;
+  transform: rotate(0) translate(200px) rotate(0);
+}
+.marqeeContainer .aurora .auroraWrapper .two {
+  background-color: #317ade;
+  top: -200px;
+  left: -200px;
+  animation: fly2 10s linear infinite alternate-reverse;
+  transform: rotate(0) translate(200px) rotate(0);
+}
+.marqeeContainer .aurora .auroraWrapper .three {
+  top: -60px;
+  right: 400px;
+  background-color: #f7b500;
+  -webkit-animation: fly1 10s linear infinite alternate;
+          animation: fly1 10s linear infinite alternate;
+  transform: rotate(0) translate(200px) rotate(0);
+}
+.marqeeContainer .aurora .auroraWrapper .four {
+  bottom: 100px;
+  right: 100px;
+  background-color: #6dd400;
+  animation: fly2 10s linear infinite alternate-reverse;
+  transform: rotate(0) translate(200px) rotate(0);
+}
+
+@media only screen and (max-width: 1100px) {
+  .marqeeContainer {
+    height: 750px;
+  }
+  .marqeeContainer .marqeeTitle {
+    font-size: 50px;
+    margin-left: 50px;
+  }
+  .marqeeContainer .mobile {
+    display: block;
+  }
+}/*# sourceMappingURL=marqee.css.map */
