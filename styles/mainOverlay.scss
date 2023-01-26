@@ -1,0 +1,300 @@
+@keyframes popUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        z-index: 50;
+    }
+}
+
+@keyframes popUpReverse {
+    0% {
+        opacity: 1;
+        z-index: 50;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes popUpClose {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        z-index: 51;
+    }
+}
+@keyframes popUpCloseReverse {
+    0% {
+        opacity: 1;
+        z-index: 51;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn4 {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn5 {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn6 {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn7 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideinFromLeftForMenuList1 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.7;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList2 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.6;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList3 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.5;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList4 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.4;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList5 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.3;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList6 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.2;
+        width: 15%;
+    }
+}
+@keyframes bottomPartPopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mainContainer {
+    position: relative;
+
+     .mainOverlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        width: 100%;
+        height: auto;
+        transition: opacity .5s ease-out;
+        background-color: #317ade;
+        display: none;
+    } 
+
+    .closeButton2 {
+        position: fixed;
+        left: 90%;
+        top: 40px;
+        color: white;
+        font-size: 30px;
+        opacity: 0;
+        transition: opacity .5s ease-out;
+        cursor: pointer;
+    }
+
+    .afterClickMenu2 {
+        width: 300px;
+        height: 700px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 51;
+        display: none;
+
+        .afterClickMenuList2 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+
+            .afterClickMenuListItem2 {
+                color: rgba(255, 255, 255, 0.5);
+                opacity: 0;
+                font-size: 40px;
+                margin: 5px;
+                padding: 10px;
+                font-weight: bold;
+                transition: opacity .5s ease-in;
+                position: relative;
+
+                .hoverEfect2 {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 85%;
+                    width: 1%;
+                    transition: width .5s ease-out;
+                    background-color: #081c39;
+                    opacity: 0;
+                }
+            }
+
+            .afterClickMenuListItem-active2 {
+                color: white;
+                position: relative;
+
+                .hoverEfectActive2 {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 85%;
+                    background-color: rgba($color: #081c39, $alpha: 0.8);
+                }
+            }
+        }
+
+        .afterClickMenu2Bottom {
+            position: fixed;
+            top: 100%;
+            left: 18%;
+            width: 20%;
+            height: auto;
+            bottom: 0px;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity .5s ease-out;
+
+            .afterClickMenu2BottomIcons {
+                display: flex;
+
+                i {
+                    color: rgba(255, 255, 255, 0.5);
+                    margin: 5px;
+                    padding: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .afterClickMenu2BottomText {
+            display: flex;
+            width: 300px;
+            text-align: center;
+            position: fixed;
+            bottom: -100px;
+            font-weight: 12px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            transition: opacity .5s ease-out;
+        }
+    }
+}

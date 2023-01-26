@@ -2,7 +2,7 @@ let t = 0;
 
 setInterval(function () {
 
-    t = t + 1;
+    t += 1;
 
     if(t === 3) {
         t = 0;
@@ -39,4 +39,23 @@ setInterval(function () {
         }
     }
     
-}, 3000);
+}, 5000); 
+
+function anm() {
+    const arrayForAnim = document.querySelectorAll('img.clientsVertical');
+    const animations = ['slideUp1 5s infinite', 'slideUp2 5s infinite', 'slideUp3 5s infinite',
+    'slideUp4 5s infinite', 'slideUp5 5s infinite'];
+
+    let r = 0;
+    let q = 0;
+
+    for(;r < arrayForAnim.length, q < animations.length; r++, q++) {
+        arrayForAnim[r].style.animation = `${animations[q]}`;
+    }
+}
+
+anm();
+
+
+
+

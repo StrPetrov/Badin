@@ -1,6 +1,6 @@
-let i = 0;
+let i = -1;
 
-setInterval(function() {
+let z = setInterval(function() {
     i = i + 1;
 
     if (i === 5) {
@@ -78,43 +78,40 @@ let name4 = `Fangsin Lim`;
 let position4 = `COO Tranxactor`;
 
 
-setInterval(function() {
+let x = setInterval(function() {
     let myPara = document.getElementsByClassName('message');
     let myName = document.getElementsByClassName('name');
     let myPosition = document.getElementsByClassName('position');
 
     switch (i) {
         case 0: {
-            myPara[0].innerHTML = text0;
-            myName[0].innerHTML = name0;
-            myPosition[0]. innerHTML = position0;
-            break;
-        }
-        case 1: {
-            myPara[0].innerHTML = text1;
-            myName[0].innerHTML = name1;
-            myPosition[0]. innerHTML = position1;
-            break;
-        }
-        case 2: {
             myPara[0].innerHTML = text2;
             myName[0].innerHTML = name2;
             myPosition[0]. innerHTML = position2;
             break;
         }
-        case 3: {
+        case 1: {
+            myPara[0].innerHTML = text0;
+            myName[0].innerHTML = name0;
+            myPosition[0]. innerHTML = position0;
+            break;
+        }
+        case 2: {
             myPara[0].innerHTML = text3;
             myName[0].innerHTML = name3;
             myPosition[0]. innerHTML = position3;
             break;
         }
-        case 4: {
+        case 3: {
             myPara[0].innerHTML = text4;
             myName[0].innerHTML = name4;
             myPosition[0]. innerHTML = position4;
+            break;
+        }
+        case 4: {
+            myPara[0].innerHTML = text1;
+            myName[0].innerHTML = name1;
+            myPosition[0]. innerHTML = position1;
         }
     }
 }, 3000)
-
-
-

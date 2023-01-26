@@ -4,13 +4,16 @@
   font-family: Raleway;
 }
 
-html, body {
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 @-webkit-keyframes fly1 {
@@ -142,6 +145,7 @@ html, body {
   z-index: 3;
   left: 73%;
   top: 100px;
+  opacity: 0;
 }
 .container .hero {
   background-image: url("../headerPhotos/hero-big-img.png");
@@ -153,6 +157,7 @@ html, body {
   left: 55%;
   bottom: 0;
   right: -150px;
+  opacity: 0;
 }
 .container .tower-left {
   background-image: url("../headerPhotos/tower.png");
@@ -164,6 +169,7 @@ html, body {
   bottom: -20px;
   right: 0;
   left: 50%;
+  opacity: 0;
 }
 .container .tower-right {
   background-image: url("../headerPhotos/tower.png");
@@ -175,6 +181,7 @@ html, body {
   bottom: 1%;
   right: 0;
   left: 92%;
+  opacity: 0;
 }
 .container .logo {
   background-image: url("../headerPhotos/logo-white.svg");
@@ -184,36 +191,39 @@ html, body {
   min-width: 130px;
   min-height: 35px;
   z-index: 3;
-  top: 100px;
+  top: 150px;
   left: 17%;
   right: 77%;
   bottom: 85%;
+  opacity: 0;
 }
 .container .title {
   width: 50%;
   position: absolute;
   z-index: 3;
-  top: 200px;
+  top: 250px;
   left: 17%;
   color: white;
   font-size: 50px;
+  opacity: 0;
 }
 .container .text {
   width: 30%;
   position: absolute;
   z-index: 3;
-  top: 480px;
+  top: 530px;
   left: 17%;
   color: grey;
   font-size: 19px;
   font-weight: bold;
   line-height: 1.6;
+  opacity: 0;
 }
 .container .buttons {
   width: 50%;
   position: absolute;
   z-index: 3;
-  top: 600px;
+  top: 650px;
   left: 17%;
   font-size: 20px;
   font-weight: bold;
@@ -221,6 +231,7 @@ html, body {
 }
 .container .buttons .btn-left {
   background-color: white;
+  opacity: 0;
   border-radius: 999px;
   color: rgb(30, 29, 29);
   width: 200px;
@@ -240,6 +251,7 @@ html, body {
 }
 .container .buttons .btn-right {
   background-color: rgb(70, 68, 68);
+  opacity: 0;
   border-radius: 999px;
   color: white;
   width: 200px;
@@ -291,20 +303,21 @@ html, body {
   color: white;
   font-size: 14px;
 }
-.container a .backTop {
+.container .backTop {
   position: fixed;
   bottom: 16px;
   right: 16px;
   height: 56px;
   width: 56px;
-  z-index: 7;
+  z-index: 6;
   display: grid;
   place-items: center;
   border-radius: 50%;
   background-color: #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s linear;
 }
-.container a .backTop .backTopBar {
+.container .backTop .backTopBar {
   height: 40px;
   width: 40px;
   z-index: 7;
@@ -312,9 +325,8 @@ html, body {
   display: grid;
   place-items: center;
   cursor: pointer;
-  background-color: white;
 }
-.container a .backTop .backTopBar .backTopIcon {
+.container .backTop .backTopBar .backTopIcon {
   height: calc(98% - 4px);
   width: calc(100% - 4px);
   background-color: #000;
@@ -362,7 +374,7 @@ html, body {
     left: 10%;
   }
   .container .menuButton {
-    display: none;
+    display: none !important;
   }
   .container .white-part-small {
     display: none;
@@ -371,6 +383,10 @@ html, body {
     display: flex;
     flex-direction: column;
     position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 3;
+    cursor: pointer;
     left: 90%;
     top: 40px;
   }

@@ -17,9 +17,71 @@
     <link rel="stylesheet" href="styles/marqee.css">
     <link rel="stylesheet" href="styles/beforeFooter.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/mainContainer.css">
+    <link rel="stylesheet" href="styles/mainOverlay.css">
+    <link rel="stylesheet" href="styles/loading.css">
 </head>
-<body>
-    <div class="container" id="top">
+<body id="body">
+    <div class="mainContainer">
+    <div class="mainLeft"></div>
+    <div class="mainTop"></div>
+    <div class="mainBot"></div>
+    <div class="mainRight"></div>
+    <div class="mainOverlay"></div>
+    <div class="closeButton2">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="closeButton">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="afterClickMenu">
+        <img src="headerPhotos/logo-white.svg" alt="img">
+        <div class="afterClickMenuList">
+            <div class="afterClickMenuListItem afterClickMenuListItem-active">Home <span class="hoverEfectActive"></span></div>
+            <div class="afterClickMenuListItem afterClickMenuListItem-passive">About Us <span class="hoverEfect"></span></div>
+            <div class="afterClickMenuListItem afterClickMenuListItem-passive">Services <span class="hoverEfect"></span></div>
+            <div class="afterClickMenuListItem afterClickMenuListItem-passive">Products <span class="hoverEfect"></span></div>
+            <div class="afterClickMenuListItem afterClickMenuListItem-passive">Careers <span class="hoverEfect"></span></div>
+            <div class="afterClickMenuListItem afterClickMenuListItem-passive">Blog <span class="hoverEfect"></span></div>
+            <div class="afterClickMenuListItem afterClickMenuListItem-passive">Contact <span class="hoverEfect"></span></div>
+        </div>
+    </div>
+    <div class="afterClickMenu2">
+        <div class="afterClickMenuList2">
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-active2">Home <span class="hoverEfectActive2"></span></div>
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-passive2">About Us <span class="hoverEfect2"></span></div>
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-passive2">Services <span class="hoverEfect2"></span></div>
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-passive2">Products <span class="hoverEfect2"></span></div>
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-passive2">Careers <span class="hoverEfect2"></span></div>
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-passive2">Blog <span class="hoverEfect2"></span></div>
+            <div class="afterClickMenuListItem2 afterClickMenuListItem-passive2">Contact <span class="hoverEfect2"></span></div>
+        </div>
+        <div class="afterClickMenu2Bottom">
+            <div class="afterClickMenu2BottomIcons">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-spotify"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+            </div>
+        </div>
+        <div class="afterClickMenu2BottomText">
+            Nikole Pašića 28, IV floor, Nis, Serbia info@badin.rs
+        </div>
+    </div>
+    <div class="windowOverlay">
+        <div class="windowOverlaySocial">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-spotify"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-square"></i>
+        </div>
+        <div class="windowOverlayText">
+            Nikole Pašića 28, IV floor, Nis, Serbia info@badin.rs
+        </div>
+    </div>
+    <div class="container">
         <div class="img-anim">
             <div class="aurora">
                 <div class="auroraWrapper">
@@ -35,7 +97,7 @@
         <div class="white-part-small"><img src="headerPhotos/white-part-small.svg" alt="img"></div>
         <div class="planet"><img src="headerPhotos/planet.png" alt="img"></div>
         <div class="menuIconMedia">
-            <div class="menuIconMediaLine menuIconMediaLineBold "></div>
+            <div class="menuIconMediaLine menuIconMediaLineBold"></div>
             <div class="menuIconMediaLine"></div>
             <div class="menuIconMediaLine"></div>
         </div>
@@ -59,15 +121,13 @@
             <div class="menuButtonLine menuButtonLineBottom"></div>
             <div class="rotate">MENU</div>
         </div>
-        <a href="#top">
-            <div class="backTop">
-                <div class="backTopBar">
-                    <span class="backTopIcon">
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </span>
-                </div>
+        <div class="backTop" id="progress">
+            <div class="backTopBar" id="progressValue">
+                <span class="backTopIcon">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </span>
             </div>
-        </a>
+        </div>
     </div>
     <div class="clients">
         <img src="clientsPhotos/united-cloud.png" alt="img">
@@ -182,16 +242,13 @@
             <img class="quoteOpen" src="feedbackPhotos/quote-open.svg" alt="img">
             <img class="quoteClose" src="feedbackPhotos/quote-close.svg" alt="img">
             <div class="feedbackMessage">
-                <p class="message">Tranxactor has worked with the team behind Badin since the beginning. 
-                    This highly talented team became the backbone of the software development and support
-                    for Tranxactor's product suite as well as the daily technical support for many of our
-                    clients around the world. The team works as much a partner as a service provider to 
-                    Tranxactor, and continues to provide a range of critical services to support Tranxactor
-                    and its global clients. We have no hesitation in recommending Badin as a solid and 
-                    reliable software partner.
+                <p class="message">In our collaboration, we most appreciate your flexibility and ability to
+                    quickly adapt to changing customer requirements. We also appreciate the demonstrated
+                    competence in all spheres. We would describe the cooperation with you as very motivating
+                    and useful for us (hopefully for you too) as we have learned a lot during this project.
                 </p>
-                <h3 class="name">Fangsin Lim</h3>
-                <span class="position">COO Tranxactor</span>
+                <h3 class="name">Nikola Ristović</h3>
+                <span class="position">Head of Satellite Applications Unit, Raiffeisen bank</span>
             </div>
         </div>
     </div>
@@ -229,24 +286,24 @@
     <div class="galleryContainer">
         <div class="row-left">
             <div class="col-left">
-                <div class="photoWrapper1">
-                    <img src="galleryPhotos/img1.jpg" alt="img">
+                <div class="photoWrapper1 wrap">
+                    <img src="galleryPhotos/img1.jpg" alt="img" class="displayImg">
                     <div class="photoOverlay">
                         <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
             </div>
             <div class="col-left">
-                <div class="photoWrapper2">
-                    <img src="galleryPhotos/img2.jpg" alt="img">
+                <div class="photoWrapper2 wrap">
+                    <img src="galleryPhotos/img2.jpg" alt="img" class="displayImg">
                     <div class="photoOverlay">
                         <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
             </div>
             <div class="col-left">
-                <div class="photoWrapper3">
-                    <img src="galleryPhotos/img3.jpg" alt="img">
+                <div class="photoWrapper3 wrap">
+                    <img src="galleryPhotos/img3.jpg" alt="img" class="displayImg"> 
                     <div class="photoOverlay">
                         <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
@@ -255,8 +312,8 @@
         </div>
         <div class="row-mid">
             <div class="col-mid">
-                <div class="photoWrapper4">
-                    <img src="galleryPhotos/img4.jpg" alt="img">
+                <div class="photoWrapper4 wrap">
+                    <img src="galleryPhotos/img4.jpg" alt="img" class="displayImg">
                     <div class="photoOverlay">
                         <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
@@ -265,21 +322,26 @@
         </div>
         <div class="row-right">
             <div class="col-right">
-                <div class="photoWrapper5">
-                    <img src="galleryPhotos/img5.jpg" alt="img">
+                <div class="photoWrapper5 wrap">
+                    <img src="galleryPhotos/img5.jpg" alt="img" class="displayImg">
                     <div class="photoOverlay">
                         <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
             </div>
             <div class="col-right">
-                <div class="photoWrapper6">
-                    <img src="galleryPhotos/img6.jpg" alt="img">
+                <div class="photoWrapper6 wrap">
+                    <img src="galleryPhotos/img6.jpg" alt="img" class="displayImg">
                     <div class="photoOverlay">
                         <div class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="galleryOpened">
+            <div class="arrowContainer"><i class="fa-solid fa-left-long arrow arrows" alt="gallery-photo"></i></div>
+            <img src="" id="displayedImage">
+            <div class="arrowContainer"><i class="fa-solid fa-right-long arrow arrows"></i></div>
         </div>
     </div>
     <div class="marqeeContainer">
@@ -533,7 +595,15 @@
         <div class="footerLine"></div>
         <div class="footerEnding">&copy;2023 - Badin Soft DOO. All right reserved.</div>
     </div>
-    <script src="timeline.js"></script>
-    <script src="trusted.js"></script>
+    </div>
+    <script src="js/timeline.js"></script>
+    <script src="js/trusted.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/menuColorChanging.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/gallery2.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/menu2.js"></script>
+    <script src="js/loading.js"></script> 
 </body>
 </html>

@@ -1,0 +1,468 @@
+@-webkit-keyframes popUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 50;
+  }
+}
+@keyframes popUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 50;
+  }
+}
+@-webkit-keyframes popUpReverse {
+  0% {
+    opacity: 1;
+    z-index: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes popUpReverse {
+  0% {
+    opacity: 1;
+    z-index: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes popUpClose {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 51;
+  }
+}
+@keyframes popUpClose {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 51;
+  }
+}
+@-webkit-keyframes popUpCloseReverse {
+  0% {
+    opacity: 1;
+    z-index: 51;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes popUpCloseReverse {
+  0% {
+    opacity: 1;
+    z-index: 51;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn5 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn5 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn6 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn6 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn7 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn7 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideinFromLeftForMenuList1 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.7;
+    width: 15%;
+  }
+}
+@keyframes slideinFromLeftForMenuList1 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.7;
+    width: 15%;
+  }
+}
+@-webkit-keyframes slideinFromLeftForMenuList2 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.6;
+    width: 15%;
+  }
+}
+@keyframes slideinFromLeftForMenuList2 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.6;
+    width: 15%;
+  }
+}
+@-webkit-keyframes slideinFromLeftForMenuList3 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.5;
+    width: 15%;
+  }
+}
+@keyframes slideinFromLeftForMenuList3 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.5;
+    width: 15%;
+  }
+}
+@-webkit-keyframes slideinFromLeftForMenuList4 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.4;
+    width: 15%;
+  }
+}
+@keyframes slideinFromLeftForMenuList4 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.4;
+    width: 15%;
+  }
+}
+@-webkit-keyframes slideinFromLeftForMenuList5 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.3;
+    width: 15%;
+  }
+}
+@keyframes slideinFromLeftForMenuList5 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.3;
+    width: 15%;
+  }
+}
+@-webkit-keyframes slideinFromLeftForMenuList6 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.2;
+    width: 15%;
+  }
+}
+@keyframes slideinFromLeftForMenuList6 {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 0.2;
+    width: 15%;
+  }
+}
+@-webkit-keyframes bottomPartPopUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bottomPartPopUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mainContainer {
+  position: relative;
+}
+.mainContainer .mainOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-out;
+  background-color: #317ade;
+  display: none;
+}
+.mainContainer .closeButton2 {
+  position: fixed;
+  left: 90%;
+  top: 40px;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  cursor: pointer;
+}
+.mainContainer .afterClickMenu2 {
+  width: 300px;
+  height: 700px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 51;
+  display: none;
+}
+.mainContainer .afterClickMenu2 .afterClickMenuList2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer .afterClickMenu2 .afterClickMenuList2 .afterClickMenuListItem2 {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  font-size: 40px;
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in;
+  position: relative;
+}
+.mainContainer .afterClickMenu2 .afterClickMenuList2 .afterClickMenuListItem2 .hoverEfect2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 85%;
+  width: 1%;
+  transition: width 0.5s ease-out;
+  background-color: #081c39;
+  opacity: 0;
+}
+.mainContainer .afterClickMenu2 .afterClickMenuList2 .afterClickMenuListItem-active2 {
+  color: white;
+  position: relative;
+}
+.mainContainer .afterClickMenu2 .afterClickMenuList2 .afterClickMenuListItem-active2 .hoverEfectActive2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 85%;
+  background-color: rgba(8, 28, 57, 0.8);
+}
+.mainContainer .afterClickMenu2 .afterClickMenu2Bottom {
+  position: fixed;
+  top: 100%;
+  left: 18%;
+  width: 20%;
+  height: auto;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.mainContainer .afterClickMenu2 .afterClickMenu2Bottom .afterClickMenu2BottomIcons {
+  display: flex;
+}
+.mainContainer .afterClickMenu2 .afterClickMenu2Bottom .afterClickMenu2BottomIcons i {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+.mainContainer .afterClickMenu2 .afterClickMenu2BottomText {
+  display: flex;
+  width: 300px;
+  text-align: center;
+  position: fixed;
+  bottom: -100px;
+  font-weight: 12px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}/*# sourceMappingURL=mainOverlay.css.map */

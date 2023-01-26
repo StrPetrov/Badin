@@ -1,0 +1,434 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInFromBot {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn4 {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn5 {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn6 {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn7 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes windowOverlayCompress {
+    0% {
+        position: fixed;
+        z-index: 20;
+        top: 50px;
+        bottom: 50px;
+        left: 150px;
+        right: 0px;
+        width: auto;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        position: fixed;
+        z-index: 20;
+        top: 70px;
+        bottom: 70px;
+        left: 69%;
+        right: 145px;
+        width: auto;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+    }
+}
+@keyframes slideinFromLeftForMenuList1 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.7;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList2 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.6;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList3 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.5;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList4 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.4;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList5 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.3;
+        width: 15%;
+    }
+}
+@keyframes slideinFromLeftForMenuList6 {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    100% {
+        opacity: 0.2;
+        width: 15%;
+    }
+}
+@keyframes slideLeftAditional {
+    0% {
+        width: 150px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes slideLeftAditionalReverse {
+    0% {
+        width: 70%;
+    }
+    100% {
+        width: 150px;
+    }
+}
+
+.mainContainer {
+    position: relative;
+
+    .slideInFromLeft {
+        animation: slideInFromLeft .5s linear forwards;
+    }
+
+    .slideInFromTop {
+        animation: slideInFromTop .5s linear forwards;
+    }
+
+    .slideInFromBot {
+        animation: slideInFromBot .5s linear forwards;
+    }
+
+    #reverseLeft {
+        animation: slideInFromLeft .5s reverse, slideLeftAditionalReverse .5s linear;
+    }
+
+    #reverseTop {
+        animation: slideInFromTop .5s reverse;
+        height: 0px;
+        transition: height .5s ease-out;
+    }
+
+    #reverseBot {
+        animation: slideInFromBot .5s reverse;
+        height: 0px;
+        transition: height .5s ease-out;
+    }
+
+    #reverseRight {
+        animation: slideInFromRight .5s reverse;
+    }
+
+    #menuClickLeft {
+        transform: translateX(0%);
+        animation: slideLeftAditional .5s linear forwards;
+    }
+
+    #menuClickTop {
+        transform: translateY(0%);
+        height: 80px;
+        transition: height .5s ease-out;
+    }
+
+    #menuClickBot {
+        transform: translateY(0%);
+        height: 80px;
+        transition: height .5s ease-out;
+    }
+
+    #menuClickRight {
+        animation: slideInFromRight .5s linear forwards;
+    }
+
+    .mainLeft {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 7;
+        width: 150px;
+        height: 100%;
+        background-color: #317ade;
+        transform: translateX(-100%);
+        transition: transform .5s ease-out;
+    }
+
+    .mainTop {
+        position: fixed;
+        top: 0;
+        z-index: 7;
+        width: 100%;
+        height: 50px;
+        background-color: #317ade;
+        transform: translateY(-100%);
+        transition: transform .5s ease-out;
+    }
+
+    .mainBot {
+        position: fixed;
+        bottom: 0;
+        z-index: 7;
+        width: 100%;
+        height: 50px;
+        background-color: #317ade;
+        transform: translateY(100%);
+        transition: transform .5s ease-out;
+    }
+
+    .mainRight {
+        position: fixed;
+        right: 0;
+        z-index: 7;
+        width: 150px;
+        height: 100%;
+        background-color: #317ade;
+        transform: translateX(100%);
+        transition: transform .5s ease-out;
+    }
+
+    .closeButton {
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 100px;
+        color: white;
+        font-size: 25px;
+        display: none;
+        transform: translateX(-100%);
+        transition: transform .3s ease-out;
+        cursor: pointer;
+    }
+
+    .afterClickMenu {
+        width: 300px;
+        height: 700px;
+        position: fixed;
+        top: 80px;
+        left: 250px;
+        z-index: 10;
+        display: none;
+
+        img {
+            max-width: 130px;
+            height: auto;
+        }
+
+        .afterClickMenuList {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+
+            .afterClickMenuListItem {
+                color: rgba(255, 255, 255, 0.5);
+                opacity: 0;
+                font-size: 40px;
+                margin: 5px;
+                padding: 10px;
+                font-weight: bold;
+                transition: opacity .5s ease-in;
+                position: relative;
+
+                .hoverEfect {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 85%;
+                    width: 1%;
+                    transition: width .5s ease-out;
+                    background-color: #081c39;
+                    opacity: 0;
+                }
+            }
+
+            .afterClickMenuListItem-active {
+                color: white;
+                position: relative;
+
+                .hoverEfectActive {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 85%;
+                    background-color: rgba($color: #081c39, $alpha: 0.8);
+                }
+            }
+        }
+    }
+
+    .windowOverlay {
+        position: fixed;
+        z-index: 20;
+        top: 50px;
+        bottom: 50px;
+        left: 150px;
+        right: 0px;
+        width: auto;
+        height: auto;
+        display: none;
+        border-radius: 25px;
+
+        .windowOverlaySocial {
+            position: absolute;
+            z-index: 25;
+            bottom: 120px;
+            left: 40px;
+            display: flex;
+
+            i {
+                color: rgba(255, 255, 255, 0.7);
+                margin: 5px;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+
+        .windowOverlayText {
+            position: absolute;
+            z-index: 25;
+            bottom: 60px;
+            left: 15%;
+            width: 70%;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+    }
+}
